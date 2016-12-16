@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -28,6 +29,7 @@
   &:hover {
     transform: scale(1.1);
     background: transparentize($button-color, 0.3);
+
 
   }
 }
