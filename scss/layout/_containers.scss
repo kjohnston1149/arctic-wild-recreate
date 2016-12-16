@@ -1,14 +1,36 @@
 .main-pic {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/bg-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url("../img/bg-1.jpg");
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  @include background-img("../img/bg-1.jpg");
   height: 50rem;
   width: 100vw;
   padding: 0;
-  position: relative;
-  overflow: hidden;
+  // position: relative;
+  // overflow: hidden;
 
+}
+
+.search {
+  flex-basis: 100px;
+  background: $navbar;
+  display: flex;
+}
+
+.sub-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  .big-img {
+    flex-grow: 2;
+    flex-basis: 480px;
+    // display: flex;
+  }
+  .small-img {
+    flex-grow: 1;
+    flex: 240px;
+    // display: flex;
+  }
 }

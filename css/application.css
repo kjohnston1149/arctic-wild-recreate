@@ -8,7 +8,9 @@ html {
   color: #FFF; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
 
 .navbar {
   width: 100%;
@@ -41,15 +43,31 @@ body {
 .main-pic {
   display: flex;
   flex-direction: column;
+  content: "";
   background-image: url("../img/bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   height: 50rem;
   width: 100vw;
-  padding: 0;
-  position: relative;
-  overflow: hidden; }
+  padding: 0; }
+
+.search {
+  flex-basis: 100px;
+  background: #353535;
+  display: flex; }
+
+.sub-pictures {
+  display: flex;
+  flex-wrap: wrap; }
+  .sub-pictures .big-img {
+    flex-grow: 2;
+    flex-basis: 480px; }
+  .sub-pictures .small-img {
+    flex-grow: 1;
+    flex: 240px; }
 
 .logo img {
   height: 3em; }
