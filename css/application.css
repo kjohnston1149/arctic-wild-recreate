@@ -10,6 +10,34 @@ html {
 body {
   margin: 0; }
 
+.navbar {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: baseline;
+    margin: 0 3em; }
+    .navbar ul li {
+      flex-direction: row;
+      list-style: none; }
+  @media only screen and (max-width: 915px) {
+    .navbar {
+      flex-direction: column; }
+      .navbar ul {
+        width: 75%; } }
+  @media only screen and (max-width: 425px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0; } }
+
 .main-pic {
   display: flex;
   flex-direction: column;
@@ -22,27 +50,6 @@ body {
   padding: 0;
   position: relative;
   overflow: hidden; }
-
-.navbar {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-basis: 200px;
-  align-items: space-between;
-  flex-wrap: wrap;
-  flex-direction: row; }
-  .navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 0 3em; }
-    .navbar ul li {
-      flex-direction: row;
-      list-style: none; }
-  @media only screen and (max-width: 900px) {
-    .navbar {
-      flex-direction: column; } }
 
 .logo img {
   height: 3em; }
