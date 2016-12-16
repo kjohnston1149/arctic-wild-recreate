@@ -5,6 +5,27 @@
   height: 50rem;
   width: 100vw;
   padding: 0;
+  .site-title {
+    align-self: center;
+    
+    text-align: center;
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: 400;
+      font-size: 7rem;
+      @media only screen and (#{$break-tablet}) {
+        font-size: 5rem;
+      }
+      @media only screen and (#{$break-mobile}) {
+        font-size: 4rem;
+      }
+    }
+
+    hr {
+      width: 50%;
+      align-self: center;
+    }
+  }
   @media only screen and (#{$break-tablet}) {
     height: 40rem;
   }
@@ -31,12 +52,13 @@
       flex: 2;
       flex-basis: 480px;
       height: 420px;
-      flex-wrap: wrap;
+      display: flex;
     }
     [class*="small-img-"] {
       flex: 1;
       flex: 240px;
       height: 420px;
+      display: flex;
 
     }
 
