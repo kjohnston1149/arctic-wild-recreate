@@ -1,16 +1,11 @@
 .main-pic {
   display: flex;
   flex-direction: column;
-  // background-image: url("../img/bg-1.jpg");
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
   @include background-img("../img/bg-1.jpg");
   height: 50rem;
   width: 100vw;
   padding: 0;
-  // position: relative;
-  // overflow: hidden;
+
 
 }
 
@@ -23,14 +18,35 @@
 .sub-pictures {
   display: flex;
   flex-wrap: wrap;
-  .big-img {
+  [class*="big-img-"]{
     flex-grow: 2;
     flex-basis: 480px;
-    // display: flex;
+    height: 420px;
   }
-  .small-img {
+  [class*="small-img-"] {
     flex-grow: 1;
     flex: 240px;
-    // display: flex;
+    height: 420px;
   }
+}
+
+.big-img-1{
+  @include background-img("../img/home-raft.jpg");
+}
+
+.big-img-2{
+  @include background-img("../img/home-custom.jpg");
+}
+
+.small-img-1{
+  @include background-img("../img/home-basecamp.jpg");
+}
+.small-img-2{
+  @include background-img("../img/home-backpacking.jpg");
+}
+.small-img-3{
+  @include background-img("../img/home-canoe.jpg");
+}
+.small-img-4{
+  @include background-img("../img/home-photo.jpg");
 }
