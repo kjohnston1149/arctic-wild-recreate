@@ -19,14 +19,21 @@
   display: flex;
   flex-wrap: wrap;
   [class*="big-img-"]{
-    flex-grow: 2;
+    flex: 2;
     flex-basis: 480px;
     height: 420px;
   }
   [class*="small-img-"] {
-    flex-grow: 1;
+    flex: 1;
     flex: 240px;
     height: 420px;
+  }
+  @media only screen and (#{$break-mobile}) {
+    [class*="-img-"] {
+      @include span-columns(12);
+      margin: 15px;
+      height: 250px;
+    }
   }
 }
 
