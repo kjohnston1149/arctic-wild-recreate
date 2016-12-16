@@ -1,5 +1,5 @@
 @mixin non-selected-button {
-  color: desaturate($accent-color, 20%);
+  color: desaturate($accent-color, 30%);
 
 };
 
@@ -27,6 +27,7 @@
   transition: all 300ms ease-in-out;
   &:hover {
     transform: scale(1.1);
+    background: transparentize($button-color, 0.3);
 
   }
 }
