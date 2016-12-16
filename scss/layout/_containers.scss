@@ -5,7 +5,12 @@
   height: 50rem;
   width: 100vw;
   padding: 0;
-
+  @media only screen and (#{$break-tablet}) {
+    height: 40rem;
+  }
+  @media only screen and (#{$break-mobile}) {
+    height: 30rem;
+  }
 
 }
 
@@ -15,28 +20,29 @@
   display: flex;
 }
 
+
 .sub-pictures {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  [class*="big-img-"]{
-    flex: 2;
-    flex-basis: 480px;
-    height: 420px;
-  }
-  [class*="small-img-"] {
-    flex: 1;
-    flex: 240px;
-    height: 420px;
-  }
-  @media only screen and (#{$break-mobile}) {
-    [class*="-img-"] {
-      @include span-columns(12);
-      margin: 15px;
-      height: 250px;
-    }
-  }
-}
 
+
+    [class*="big-img-"]{
+      flex: 2;
+      flex-basis: 480px;
+      height: 420px;
+      flex-wrap: wrap;
+    }
+    [class*="small-img-"] {
+      flex: 1;
+      flex: 240px;
+      height: 420px;
+
+    }
+
+
+
+}
 .big-img-1{
   @include background-img("../img/home-raft.jpg");
 }

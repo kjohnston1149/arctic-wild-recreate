@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  @media only screen and (#{$break-mobile}) {
+    flex-direction: column;
+    [class*="-img-"] {
+      @include span-columns(12);
+      flex: 1;
+      margin: 15px;
+      height: 250px;
+      flex-wrap: wrap;
+    }
+  }
+
+}
