@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -27,6 +28,7 @@
   transition: all 300ms ease-in-out;
   &:hover {
     transform: scale(1.1);
+    background: transparentize($button-color, 0.2);
 
   }
 }
