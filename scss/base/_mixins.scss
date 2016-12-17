@@ -15,9 +15,10 @@
 }
 
 @mixin buttons($button-color) {
-
   border-radius: 50%;
-  background: transparentize($button-color, 0.5);
+  height: 90px;
+  width: 90px;
+  background: transparentize($button-color, 0.3);
   margin: 0;
   padding: 1.75em 1.75em;
   border: none;
@@ -25,7 +26,7 @@
   transition: background 3s ease-in-out;
   &:hover {
     transform: scale(1.1);
-    background: transparentize($button-color, 0.3);
+    background: transparentize($button-color, 0.2);
   }
   img {
     height: 50px;

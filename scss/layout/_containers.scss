@@ -53,12 +53,21 @@
       flex-basis: 480px;
       height: 420px;
       display: flex;
+      justify-content: center;
+      h3 {
+        @extend %gallery-text;
+      }
+
     }
     [class*="small-img-"] {
       flex: 1;
       flex: 240px;
       height: 420px;
       display: flex;
+      justify-content: center;
+      h3 {
+        @extend %gallery-text;
+      }
 
     }
 
