@@ -4,11 +4,11 @@
 
 .icon-button {
   @include buttons($navbar);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   align-self: center;
-  @media only screen and (#{$break-tablet}) {
-  margin: 0;
-  }
+  display: block;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+
+
 }

@@ -100,13 +100,13 @@ body {
     flex-basis: 480px;
     height: 420px;
     display: flex;
-    justify-content: center; }
+    justify-content: flex-start; }
   .sub-pictures [class*="small-img-"] {
     flex: 1;
     flex: 240px;
     height: 420px;
     display: flex;
-    justify-content: center; }
+    justify-content: flex-start; }
 
 .big-img-1 {
   content: "";
@@ -196,6 +196,9 @@ body {
   border: none;
   box-shadow: none;
   transition: all 300ms ease-in-out; }
+  @media only screen and (max-width: 915px) {
+    .play-button {
+      transform: scale(0.8); } }
   .play-button:hover {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.8); }
@@ -213,19 +216,20 @@ body {
   border: none;
   box-shadow: none;
   transition: all 300ms ease-in-out;
+  align-self: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center; }
+  position: absolute;
+  left: 50%;
+  right: 50%; }
+  @media only screen and (max-width: 915px) {
+    .icon-button {
+      transform: scale(0.8); } }
   .icon-button:hover {
     transform: scale(1.1);
     background: rgba(53, 53, 53, 0.8); }
   .icon-button img {
     height: 50px;
     width: 50px; }
-  @media only screen and (max-width: 915px) {
-    .icon-button {
-      margin: 0; } }
 
 .logo img {
   height: 3em; }

@@ -23,6 +23,9 @@
   border: none;
   box-shadow: none;
   transition: all 300ms ease-in-out;
+  @media only screen and (#{$break-tablet}) {
+  transform: scale(0.8);
+  }
   &:hover {
     transform: scale(1.1);
     background: transparentize($button-color, 0.2);
