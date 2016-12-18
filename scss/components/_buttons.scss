@@ -7,8 +7,11 @@
   align-self: center;
   display: block;
   position: absolute;
-  left: 50%;
+  left: 40%;
   right: 50%;
+  @media only screen and (#{$break-mobile}) {
+    left: 50%;
+  }
 
 
 }

@@ -219,7 +219,7 @@ body {
   align-self: center;
   display: block;
   position: absolute;
-  left: 50%;
+  left: 40%;
   right: 50%; }
   @media only screen and (max-width: 915px) {
     .icon-button {
@@ -230,6 +230,9 @@ body {
   .icon-button img {
     height: 50px;
     width: 50px; }
+  @media only screen and (max-width: 690px) {
+    .icon-button {
+      left: 50%; } }
 
 .logo img {
   height: 3em; }
